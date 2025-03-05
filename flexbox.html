@@ -13,17 +13,36 @@
         flex-direction: row;
         flex-wrap: wrap;
         */
-        flex-flow: row wrap;
-        justify-content: center;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        align-content: space-evenly;
       }
 
       .box {
         background-color: #36bbe7;
         padding: 20px;
+        flex-basis: 200px;
       }
 
       .box1 {
         height: 300px;
+        order: 2;
+        /*
+        flex-grow: 1;
+        flex-shrink: 0;
+        */
+        flex: 1 0 300px;
+      }
+
+      .box2 {
+        order: 3;
+      }
+
+      .box3 {
+        order: 1;
+        align-self: flex-start;
       }
     </style>
   </head>
@@ -32,13 +51,6 @@
       <div class="box box1">box1</div>
       <div class="box box2">box2</div>
       <div class="box box3">box3</div>
-      <div class="box box4">box4</div>
-      <div class="box box5">box5</div>
-      <div class="box box6">box6</div>
-      <div class="box box7">box7</div>
-      <div class="box box8">box8</div>
-      <div class="box box9">box9</div>
-      <div class="box box10">box10</div>
     </div>
   </body>
 </html>
