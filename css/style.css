@@ -1,0 +1,24 @@
+@import url('./destyle.css');
+
+.menu {
+  display: flex;
+  gap: 10px;
+}
+/* paddingで行うとborder内の要素の中にも余白が生まれてしまう */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a:not(.logo):hover {
+  color: #646cff;
+  text-decoration: underline;
+}
